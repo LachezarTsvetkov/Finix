@@ -2,7 +2,6 @@
 #pragma warning(push)
 #pragma warning(disable:4251)
 
-#include <memory>
 #include "Core.h"
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/stdout_color_sinks.h"

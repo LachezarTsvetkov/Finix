@@ -1,8 +1,7 @@
 #pragma once
 
+#include "fxpch.h"
 #include "Finix/Core.h"
-#include <string>
-#include <functional>
 
 namespace Finix {
 	// Events in Finix are currently blocking, meaning when an event occurs it

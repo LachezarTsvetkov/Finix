@@ -1,8 +1,9 @@
+#include "fxpch.h"
 #include "Application.h"
+
 #include "Finix/Events/ApplicationEvent.h"
-
-
 #include "Finix/Log.h"
+
 namespace Finix {
 
 	Application::Application()

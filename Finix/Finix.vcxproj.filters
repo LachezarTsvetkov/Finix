@@ -34,6 +34,7 @@
     <ClInclude Include="src\Finix\Log.h">
       <Filter>Finix</Filter>
     </ClInclude>
+    <ClInclude Include="src\fxpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Finix\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Finix\Log.cpp">
       <Filter>Finix</Filter>
     </ClCompile>
+    <ClCompile Include="src\fxpch.cpp" />
   </ItemGroup>
 </Project>

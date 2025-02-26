@@ -18,6 +18,10 @@ project "Finix"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+
+	pchheader "fxpch.h"
+	pchsource "Finix/src/fxpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
