@@ -10,6 +10,12 @@ workspace "Finix"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to the root folder:
+IncludeDir = {}
+IncludeDir["GLFW"] = "Finix/vendor/GLFW/include"
+
+include "Finix/vendor/GLFW"
+
 project "Finix"
 	location "Finix"
 	kind "SharedLib"
@@ -17,7 +23,6 @@ project "Finix"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
-
 
 	pchheader "fxpch.h"
 	pchsource "Finix/src/fxpch.cpp"
@@ -31,7 +36,15 @@ project "Finix"
 	includedirs 
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include;"
+		"%{prj.name}/vendor/spdlog/include;",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib",
+		"dwmapi.lib"
 	}
 
 	filter "system:windows"

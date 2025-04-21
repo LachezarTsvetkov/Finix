@@ -9,6 +9,7 @@
 
 namespace Finix
 {
+
 	class FINIX_API Log
 	{
 	public:
@@ -29,11 +30,11 @@ namespace Finix
 #define FX_CORE_INFO(...)	::Finix::Log::GetCoreLogger()->info(__VA_ARGS__)
 #define FX_CORE_WARN(...)	::Finix::Log::GetCoreLogger()->warn(__VA_ARGS__)
 #define FX_CORE_ERROR(...)	::Finix::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define FX_CORE_FATAL(...)	::Finix::Log::GetCoreLogger()->fatak(__VA_ARGS__)
+#define FX_CORE_FATAL(...)	::Finix::Log::GetCoreLogger()->critical(__VA_ARGS__)
 
 // Client log macros
 #define FX_TRACE(...)		::Finix::Log::GetClientLogger()->trace(__VA_ARGS__)
 #define FX_INFO(...)		::Finix::Log::GetClientLogger()->info(__VA_ARGS__)
 #define FX_WARN(...)		::Finix::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define FX_ERROR(...)		::Finix::Log::GetClientLogger()->error(__VA_ARGS__)
-#define FX_FATAL(...)		::Finix::Log::GetClientLogger()->fatak(__VA_ARGS__)
+#define FX_FATAL(...)		::Finix::Log::GetClientLogger()->critical(__VA_ARGS__)

@@ -1,3 +1,6 @@
 [submodule "Finix/vendor/spdlog"]
 	path = Finix/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Finix/vendor/GLFW"]
+	path = Finix/vendor/GLFW
+	url = https://github.com/LachezarTsvetkov/glfw
