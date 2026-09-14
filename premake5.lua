@@ -36,7 +36,7 @@ project "Finix"
 	includedirs 
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include;",
+		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}"
 	}
 
@@ -96,8 +96,8 @@ project "Sandbox"
 
 	includedirs
 	{
-		"Finix/vendor/spdlog/include;",
-		"Finix/src;"
+		"Finix/vendor/spdlog/include",
+		"Finix/src"
 	}
 
 	links
