@@ -1,1 +1,1 @@
-call vendor\bin\premake\premake5.exe vs2026
+call vendor\bin\premake\premake5.exe vs2022

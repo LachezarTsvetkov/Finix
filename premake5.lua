@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to the root folder:
 IncludeDir = {}
 IncludeDir["GLFW"] = "Finix/vendor/GLFW/include"
+IncludeDir["Glad"] = "Finix/vendor/Glad/include"
 
 include "Finix/vendor/GLFW"
+include "Finix/vendor/Glad"
 
 project "Finix"
 	location "Finix"
@@ -37,12 +39,14 @@ project "Finix"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib",
 		"dwmapi.lib"
 	}
@@ -56,6 +60,7 @@ project "Finix"
 		{
 			"FX_PLATFORM_WINDOWS",
 			"FX_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands 
