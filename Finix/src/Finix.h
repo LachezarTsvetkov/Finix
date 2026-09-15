@@ -4,6 +4,7 @@
 
 #include "Finix/Application.h"
 #include "Finix/Log.h"
+#include "Finix/Layer.h"
 
 // ------ENTRY POINT------
 #include "Finix/EntryPoint.h"

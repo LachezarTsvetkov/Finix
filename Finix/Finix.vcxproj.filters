@@ -37,6 +37,12 @@
     <ClInclude Include="src\Finix\Events\MouseEvent.h">
       <Filter>Finix\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Finix\Layer.h">
+      <Filter>Finix</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Finix\LayerStack.h">
+      <Filter>Finix</Filter>
+    </ClInclude>
     <ClInclude Include="src\Finix\Log.h">
       <Filter>Finix</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Finix\Application.cpp">
+      <Filter>Finix</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Finix\Layer.cpp">
+      <Filter>Finix</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Finix\LayerStack.cpp">
       <Filter>Finix</Filter>
     </ClCompile>
     <ClCompile Include="src\Finix\Log.cpp">

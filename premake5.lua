@@ -65,16 +65,19 @@ project "Finix"
 
 	filter "configurations:Debug"
 		defines "FX_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 		buildoptions { "/utf-8" }
 
 	filter "configurations:Development"
 		defines "FX_DEVELOPMENT"
+		buildoptions "/MD"
 		symbols "On"
 		buildoptions { "/utf-8" }
 
 	filter "configurations:Release"
 		defines "FX_RELEASE"
+		buildoptions "/MD"
 		symbols "On"
 		buildoptions { "/utf-8" }
 
@@ -117,15 +120,18 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "FX_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 		buildoptions { "/utf-8" }
 
 	filter "configurations:Development"
 		defines "FX_DEVELOPMENT"
+		buildoptions "/MD"
 		symbols "On"
 		buildoptions { "/utf-8" }
 
 	filter "configurations:Release"
 		defines "FX_RELEASE"
+		buildoptions "/MD"
 		symbols "On"
 		buildoptions { "/utf-8" }
